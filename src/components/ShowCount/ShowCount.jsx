@@ -2,7 +2,7 @@ import './ShowCount.css'
 
 const ShowCount = (props) => {
   return (
-    <div className='divCount'>
+    <div>
       <h2>
         You clicked here {props.count} {props.count === 1 ? 'time' : 'times'}
       </h2>
