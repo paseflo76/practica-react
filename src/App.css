@@ -1,0 +1,27 @@
+/* App.css */
+.divCount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.restar {
+  background-color: #a0a8ff;
+  border: 2px solid #3b5bff;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.sumar {
+  background-color: #ffd98a;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
