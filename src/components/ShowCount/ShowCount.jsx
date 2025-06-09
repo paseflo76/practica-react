@@ -1,6 +1,13 @@
-import React from 'react'
 import './ShowCount.css'
 
-export default function ShowCount({ count }) {
-  return <div>{count}</div>
+const ShowCount = (props) => {
+  return (
+    <div className='divCount'>
+      <h2>
+        You clicked here {props.count} {props.count === 1 ? 'time' : 'times'}
+      </h2>
+    </div>
+  )
 }
+
+export default ShowCount

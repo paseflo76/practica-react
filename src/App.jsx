@@ -1,25 +1,23 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import ShowCount from './components/ShowCount/ShowCount'
 
-export default function App() {
-  const [count, setCount] = useState(0)
+function App() {
+  const [counter, setCounter] = useState(0)
 
   return (
-    <div>
-      <div>
-        <p>
-          your clicked here {count} {count === 1 ? 'time' : 'times'}
-        </p>
-      </div>
+    <div className='app'>
+      <ShowCount count={counter} />
       <div className='buttons'>
-        <button className='restar' onClick={() => setCount(count - 1)}>
+        <button onClick={() => setCounter(counter - 1)} className='restar'>
           Restar
         </button>
-        <button className='sumar' onClick={() => setCount(count + 1)}>
+        <button onClick={() => setCounter(counter + 1)} className='sumar'>
           Sumar
         </button>
       </div>
     </div>
   )
 }
+
+export default App
